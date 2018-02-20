@@ -24,3 +24,8 @@ GETTING STARTED:
     firebase deploy
 ```
 
+4. To add function to another project
+```
+    firebase use --add
+```
+and choice a project

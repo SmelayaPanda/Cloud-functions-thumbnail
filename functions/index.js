@@ -7,9 +7,13 @@ const spawn = require('child-process-promise').spawn;
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
+
+// PROBLEMS:
+// 1. Load thumbnail to root directory of firestorage!
+// 2. Create function which remove thumbnail on remove main image
 exports.createImageThumbnail = functions.storage.object().onChange(event => {
-    const THUMBNAIL_SIZE = '500x500';
-    const IMAGE_PREFIX = 'thumbnail_' + THUMBNAIL_SIZE;
+    const THUMBNAIL_SIZE = '300x300';
+    const IMAGE_PREFIX = 'thumbnail_' + THUMBNAIL_SIZE + '_';
 
     const object = event.data;
     const bucket = object.bucket;

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "montessori-dev"
+    "default": "montessori-dev",
+    "nicetime": "nicetome-panda"
   }
 }
